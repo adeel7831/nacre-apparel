@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className="flex justify-between items-center px-3 md:px-8 lg:px-10 xl:px-12 py-5  bg-gray-100">
+      <div className="flex justify-between items-center px-3 md:px-8 lg:px-10 xl:px-12 py-5 border-b border-b-gray-300 bg-gray-100">
         <Link to="/">Nacre Apparel</Link>
 
         <nav className="hidden md:block">
@@ -38,7 +38,7 @@ const Header = () => {
           )}
         </div>
       </div>
-      {mobileMenuOpen && <MobileMenu mobileMenuToggler={mobileMenuToggler}/>}
+      {mobileMenuOpen && <MobileMenu mobileMenuToggler={mobileMenuToggler} />}
     </>
   );
 };

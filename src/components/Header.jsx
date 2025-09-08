@@ -38,7 +38,7 @@ const Header = () => {
           )}
         </div>
       </div>
-      {mobileMenuOpen && <MobileMenu />}
+      {mobileMenuOpen && <MobileMenu mobileMenuToggler={mobileMenuToggler}/>}
     </>
   );
 };

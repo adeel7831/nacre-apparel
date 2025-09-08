@@ -1,9 +1,12 @@
 import { Link } from "react-router";
 import NavItems from "../constants/NavItems";
-const MobileMenu = () => {
+const MobileMenu = ({ mobileMenuToggler }) => {
   return (
     <nav className="md:hidden">
-      <div className="flex flex-col fixed z-50 w-screen h-screen items-center gap-5 px-3 py-5 text-lg bg-gray-100">
+      <div
+        onClick={mobileMenuToggler}
+        className="flex flex-col fixed z-50 w-screen h-screen items-center gap-5 px-3 py-5 text-lg bg-gray-100"
+      >
         {NavItems.map((item, indx) => {
           return (
             <Link

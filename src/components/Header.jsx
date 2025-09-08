@@ -30,7 +30,7 @@ const Header = () => {
             })}
           </div>
         </nav>
-        <div className="md:hidden" onClick={mobileMenuToggler}>
+        <div onClick={mobileMenuToggler} className="md:hidden">
           {mobileMenuOpen ? (
             <MdOutlineClose className="h-7 w-7" />
           ) : (

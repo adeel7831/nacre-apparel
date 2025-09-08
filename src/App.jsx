@@ -1,9 +1,9 @@
-import "./App.css";
-
+import Header from "./components/Header";
 function App() {
   return (
     <>
-      <h1>Nacre Apparel</h1>
+      <Header />
+      
     </>
   );
 }

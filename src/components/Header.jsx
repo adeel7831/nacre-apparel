@@ -30,15 +30,21 @@ const Header = () => {
             })}
           </div>
         </nav>
-        <div onClick={mobileMenuToggler} className="md:hidden">
-          {mobileMenuOpen ? (
-            <MdOutlineClose className="h-7 w-7" />
-          ) : (
-            <RiMenu3Fill className="h-7 w-7" />
-          )}
+        <div onClick={mobileMenuToggler} className="md:hidden relative w-7 h-7">
+          <RiMenu3Fill
+            className={`absolute h-7 w-7 transition-all duration-500 ease-in-out
+            ${mobileMenuOpen ? "opacity-0  scale-0" : "opacity-100  scale-100"}`}
+          />
+          <MdOutlineClose
+            className={`absolute h-7 w-7 transition-all duration-500 ease-in-out
+            ${mobileMenuOpen ? "opacity-100 scale-100" : "opacity-0  scale-0"}`}
+          />
         </div>
       </div>
-      {mobileMenuOpen && <MobileMenu mobileMenuToggler={mobileMenuToggler} />}
+      <MobileMenu
+        isOpen={mobileMenuOpen}
+        mobileMenuToggler={mobileMenuToggler}
+      />
     </>
   );
 };

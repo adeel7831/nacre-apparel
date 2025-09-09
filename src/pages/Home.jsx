@@ -1,6 +1,6 @@
-const Home = ()=>{
-    return(
-        <h1>Home</h1>
-    )
-}
+import Carousel from "../components/Carousel";
+
+const Home = () => {
+  return <Carousel />;
+};
 export default Home;

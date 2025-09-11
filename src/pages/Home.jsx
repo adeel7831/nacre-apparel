@@ -1,4 +1,5 @@
 import Carousel from "../components/Carousel";
+import CategorySection from "../components/CategorySection";
 import TopViewedSection from "../components/TopViewedSection";
 
 const Home = () => {
@@ -8,7 +9,9 @@ const Home = () => {
       <div className="px-3 py-5 md:px-5 md:py-8 lg:px-10 lg:py-10 xl:px-20 ">
         <TopViewedSection />
       </div>
-      
+      <div className="px-3 py-5 md:px-5 md:py-8 lg:px-10 lg:py-10 xl:px-20 ">
+        <CategorySection />
+      </div>
     </>
   );
 };

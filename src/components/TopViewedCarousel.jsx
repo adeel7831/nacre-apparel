@@ -8,8 +8,16 @@ import carouselImg1 from "../assets/imgs/heroCarousel1.jpg";
 import carouselImg2 from "../assets/imgs/heroCarousel2.jpg";
 import carouselImg3 from "../assets/imgs/heroCarousel3.jpg";
 
-// 🔹 Array of slides
 const slidesData = [
+  { src: carouselImg1, alt: "Slide 1" },
+  { src: carouselImg2, alt: "Slide 2" },
+  { src: carouselImg3, alt: "Slide 3" },
+  { src: carouselImg1, alt: "Slide 1" },
+  { src: carouselImg2, alt: "Slide 2" },
+  { src: carouselImg3, alt: "Slide 3" },
+  { src: carouselImg1, alt: "Slide 1" },
+  { src: carouselImg2, alt: "Slide 2" },
+  { src: carouselImg3, alt: "Slide 3" },
   { src: carouselImg1, alt: "Slide 1" },
   { src: carouselImg2, alt: "Slide 2" },
   { src: carouselImg3, alt: "Slide 3" },
@@ -28,10 +36,10 @@ const TopViewedCarousel = () => {
         slidesPerView="auto"
         spaceBetween={10}
         breakpoints={{
-          640: { spaceBetween: 15 }, // sm
-          768: { spaceBetween: 20 }, // md
-          1024: { spaceBetween: 25 }, // lg
-          1280: { spaceBetween: 30 }, // xl
+          640: { spaceBetween: 15 },
+          768: { spaceBetween: 20 },
+          1024: { spaceBetween: 25 },
+          1280: { spaceBetween: 30 },
         }}
       >
         {slidesData.map((slide, index) => (
@@ -48,7 +56,6 @@ const TopViewedCarousel = () => {
         ))}
       </Swiper>
 
-      {/* 🔹 Custom Navigation Buttons */}
       <button className="custom-prev absolute top-1/2 left-0 z-10 -translate-y-1/2 bg-blue-400 text-white p-1 md:p-2 rounded-full hover:bg-black transition">
         <GrFormPrevious />
       </button>

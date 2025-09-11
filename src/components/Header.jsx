@@ -21,7 +21,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className="sticky top-0 z-10 w-full flex justify-between items-center px-3 md:px-8 lg:px-10 xl:px-12 py-5 border-b border-b-gray-300 bg-gray-100">
+      <div className="sticky top-0 z-20 w-full flex justify-between items-center px-3 md:px-8 lg:px-10 xl:px-12 py-5 border-b border-b-gray-300 bg-gray-100">
         <div
           className={`${
             searchBarOpen ? "translate-y-0" : "-translate-y-full"

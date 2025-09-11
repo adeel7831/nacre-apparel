@@ -15,6 +15,7 @@ const Header = () => {
   };
   const openSearchBar = () => {
     setSearchBarOpen(true);
+    setMobileMenuOpen(false);
   };
   const closeSearchBar = () => {
     setSearchBarOpen(false);

@@ -17,7 +17,7 @@ const CategorySection = () => {
             <img
               src={menCategoryImg}
               alt=""
-              className="transition-all ease-in-out hover:scale-105"
+              className="transition-all duration-1000 ease-in-out hover:scale-105"
             />
           </div>
           <p className="text-center md:text-lg xl:text-xl font-medium">MEN</p>
@@ -27,7 +27,7 @@ const CategorySection = () => {
             <img
               src={womenCategoryImg}
               alt=""
-              className="transition-all ease-in-out hover:scale-105"
+              className="transition-all duration-1000 ease-in-out hover:scale-105"
             />
           </div>
           <p className="text-center md:text-lg xl:text-xl font-medium">WOMEN</p>
@@ -37,7 +37,7 @@ const CategorySection = () => {
             <img
               src={boysCategoryImg}
               alt=""
-              className="transition-all ease-in-out hover:scale-105"
+              className="transition-all duration-1000 ease-in-out hover:scale-105"
             />
           </div>
           <p className="text-center  md:text-lg xl:text-xl font-medium">BOYS</p>
@@ -47,7 +47,7 @@ const CategorySection = () => {
             <img
               src={girlsCategoryImg}
               alt=""
-              className="transition-all ease-in-out hover:scale-105"
+              className="transition-all duration-1000 ease-in-out hover:scale-105"
             />
           </div>
           <p className="text-center md:text-lg xl:text-xl font-medium">GIRLS</p>
